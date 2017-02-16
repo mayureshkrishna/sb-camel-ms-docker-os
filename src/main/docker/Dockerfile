@@ -1,5 +1,5 @@
-FROM lwieske/java-8:server-jre-8u121-slim
-MAINTAINER Mayuresh Krishna:0.1
+FROM mayureshkrishna/java-8:server-jre-8u121-slim
+LABEL maintainer Mayuresh Krishna <mayureshkrishna@gmail.com>
 VOLUME /tmp
 ADD customer-comments-0.0.1-SNAPSHOT.jar app.jar
 RUN sh -c 'touch /app.jar'
